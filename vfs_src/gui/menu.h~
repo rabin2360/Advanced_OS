@@ -1,0 +1,2 @@
+
+GtkWidget *get_menubar_menu( GtkWidget  *window, gpointer callback_data );
