@@ -54,6 +54,6 @@ int bst_delete(b_node **bst_root_ptr, char *fullpath);
 /*Prints the bst*/
 void print_inorder(b_node *bst_root);
 
-void dfs_search(b_node *bst_root, char * searchFile, int *foundCount, b_node **foundElements);
+void dfs_search(b_node *bst_root, char * searchFile, int *foundCount, b_node ** foundElements);
 
 #endif /* VFS_BST_H_ */

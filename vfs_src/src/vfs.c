@@ -1089,13 +1089,22 @@ int search_files(char *fileName)
  if (fileName == NULL )
 	return 0;
 
- bst_node = bst_search(bst_root,fileName);
+ /*bst_node = bst_search_file(bst_root,fileName);
  
  if (bst_node == NULL)
 	return 0;
  else
 	return 1;
-	
- return searchResult;
+*/
+
+ if(bst_search_file(bst_root,fileName) == 0)
+{
+	return 0;
+}
+else
+{
+	return 1;
+}
+
 }
 

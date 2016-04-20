@@ -2,6 +2,7 @@
  * vfs_integration.c
  *
  */
+
 //#pragma pack(push, 1)
 #include<stdio.h>
 #include<stdlib.h>
@@ -1088,13 +1089,25 @@ int search_files(char *fileName)
  if (fileName == NULL )
 	return 0;
 
- bst_node = bst_search(bst_root,fileName);
+ /*bst_node = bst_search_file(bst_root,fileName);
  
  if (bst_node == NULL)
 	return 0;
  else
 	return 1;
-	
+*/
+
+ if(bst_search_file(bst_root,fileName) == 0)
+{
+	printf("false");
+	return 0;
+}
+else
+{
+	printf("true");
+	return 1;
+}
+
  return searchResult;
 }
 
